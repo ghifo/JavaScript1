@@ -52,7 +52,7 @@ console.log(z);
 const a = 7;
 console.log(a);
 
-const highestValue = Math.max(7, 7.25);
+const highestValue = Math.max(a, z);
 
 console.log(highestValue);
 
@@ -75,7 +75,7 @@ console.log("---------------");
 let myString = "this is a test";
 console.log(myString);
 
-myStringLength = myString.length;
+const myStringLength = myString.length;
 console.log(myStringLength);
 
 console.log("---------------");
@@ -84,13 +84,13 @@ console.log("---------------");
 let firstFoo = "Ghufran";
 console.log("the value of my variable will be: Ghufran // " + firstFoo);
 
-secondFoo = 21;
+let secondFoo = 21;
 console.log("the value of my variable will be: 21 // " + secondFoo);
 
-thirdFoo = "February";
+let thirdFoo = "February";
 console.log("the value of my variable will be: February // " + thirdFoo);
 
-fourthFoo = 1985;
+let fourthFoo = 1985;
 console.log("the value of my variable will be: 1985 // " + fourthFoo);
 
 console.log("---------------");
