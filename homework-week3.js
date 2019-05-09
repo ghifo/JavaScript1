@@ -5,10 +5,8 @@ console.log(myString);   //hello,this,is,a,difficult,to,read,sentence
 console.log(myString.length);   //42
 
 //Find a way to remove the commas from the string and replace them with spaces.
-for (let i=0; i<myString.length; i++){
-    myString = myString.replace(/,/g, " "); 
+myString = myString.replace(/,/g, " "); 
     console.log(myString);   //"hello this is a difficult to read sentence"
-}
 
 //2. Arrays!
 
@@ -68,12 +66,12 @@ myFunction(personalInfo) // Ghufran 34
 
 
 // ------ vehicleType function-----------
-function vehicleType (color,code) {
-    if (code === 1){
-        return "a " + color + " car";
-    } else {                          
-        return "a " + color + " motorbike";
-    } 
+function vehicleType(color, code) {
+  if (code === 1) {
+    return `a ${color} car`;
+  } else {
+    return `a ${color} motorbike`;
+  }
 }
 vehicleType("blue", 2)    //"a blue motorbike"
 
@@ -84,22 +82,19 @@ if (3 === 3) {
   console.log("no");
 }
 */
-const message = (3 === 3) ? "yes" : "no";
-console.log(message);  //      yes
+console.log(3 === 3 ? 'yes' : 'no')  //      yes
 
 //--------vehicle function (color, code, age)---------
-function vehicle (color, code, age){
-    if(age > 1 && code === 1){
-        return "a " + color + " used" + " car";
-    } else if(age > 1 && code === 2){
-        return "a " + color + " used" + " motorbike";
-    }
-    else if(age = 1 && code === 1){
-        return "a " + color + " new" + " car";
-    }
-    else if (age =1 && code === 2){
-        return "a " + color + " new" + " motorbike";
-    }
+function vehicle(color, code, age) {
+  if (age > 1 && code === 1) {
+    return `a ${color} used car`;
+  } else if (age > 1 && code === 2) {
+    return `a ${color} used motorbike`;
+  } else if ((age = 1 && code === 1)) {
+    return `a ${color} new car`;
+  } else if ((age = 1 && code === 2)) {
+    return `a ${color} new motorbike`;
+  }
 }
 
 
