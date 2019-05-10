@@ -49,8 +49,8 @@ function sum (a,b,c) {
 sum (1,2,3);   // 6
 
 //---------colorCar function -----------
-function colorCar (color) {
-    return "a "+ color + " car";   //the input should be a string .... I tried a lot but couldn't use red as a color not as a string????
+function colorCar (color){
+	return `a ${color} car`;
 } 
 colorCar("red");   //"a red car"
 
