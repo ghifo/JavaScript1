@@ -116,27 +116,28 @@ function vehicle(color, item, age) {
 vehicle('green', 3, 1); //"a green new bike"
 
 // -------plurals/ commas + space---------
-//let listOfVehicles = ["motorbike", "car", "caravan", "bike"];
+//let listOfVehicles = ['motorbike', 'car', 'caravan', 'bike'];
+
 function loopFunction(listOfVehicles) {
   for (let i = 0; i < listOfVehicles.length; i++) {
     if (i === listOfVehicles.length - 1) {
-      listOfVehicles[i] = ` and ${listOfVehicles[i]}`;
+      listOfVehicles[i] = ` and ${listOfVehicles[i]}s.`;
     } else {
       listOfVehicles[i] = ` ${listOfVehicles[i]}s`;
     }
+    
   }
-  console.log(`Amazing Joe's Garage, we service ${listOfVehicles}.`);
+  console.log(`Amazing Joe's Garage, we service${listOfVehicles}`);
 }
-loopFunction(listOfVehicles);
-// Amazing Joe's Garage, we service  motorbikes, cars, caravans, and  bikes.
-
-//-------- adding a vehicle---------
+// Amazing Joe's Garage, we service motorbikes, cars, caravans, and bikes.
 listOfVehicles.push('boat');
 console.log(listOfVehicles);
 
 // ----calling the function without changes-------
-loopFunction(listOfVehicles); // it repeats itself
-// Amazing Joe's Garage, we service   motorbikess,  carss,  caravanss,  and  bikess, and  boats.
+loopFunction(listOfVehicles);
+
+// ["motorbike", "car", "caravan", "bike", "boat"]
+// Amazing Joe's Garage, we service motorbikes, cars, caravans, bikes, and boats.
 
 //-------- empty object-------
 let obj = {};
