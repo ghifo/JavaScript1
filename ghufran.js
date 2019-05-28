@@ -49,10 +49,10 @@ console.log(y);
 const z = 7.25;
 console.log(z);
 
-const a = 7;
+const a = Math.round(z);
 console.log(a);
 
-const highestValue = Math.max(a, z);
+const highestValue = Math.max(z, a);
 
 console.log(highestValue);
 
